@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>говноеды</title>
+</head>
+<body>
+    <h1>HTML GUIDE BY GRIGORIY SMOLENENKO FOR GRIGORIY SMOLENENKO</h1>
+    <h2>
+    (<> заменены на {})
+    <br>
+    <BR>для изменения титла страницы используется title, коотрая пишется в head</BR>
+    <p>для создания параграфа используется p
+        <br>
+    
+    для разметки текста используется h1-6</h2>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    </p>
+    <h3>чтобы начать с новой строки
+    <br>
+    <br> или пропустить строчку
+    <br>используется br</h3>
+
+
+    <h2>разметка текста:</h2>
+    <strong>жирный текст</strong> - strong
+    <br>
+    <em>курсив</em> - em
+    <br>
+    <p><span style = 'color: red'>для измения цвета используется функция span :</span></p>
+    {span style = "color: red"}text {/span}
+    
+
+
+
+
+
+
+    <h2> чтобы сделать полосу используется hr 
+    <br> hr принимает следуюищие параметры:</h2>
+    <hr>
+    <br><h4>width - длина width = "100"
+    <hr width = "100">
+    <br> align - разметка ("right", "left") align = "right"
+    <hr align = "right" width="100">
+    <br> size - ширина size = "5"
+    <hr size = '5'>
+    <br> noshade - убрать тени
+    <hr size = "5" noshade>
+    <br> color - изменить цвет color = "red"
+    <hr color = "blue">
+    <p>все вместе</p>
+    <hr size = '5' align = "left" noshade color = "blue" width = "100"></h4>
+
+    <br>
+    <br>
+    <h2>Разметка страницы:</h2>
+    <br>для перечисления используется {li} {/li}, можно переносить на несколько строчек
+    <ol type = "number">
+        <li>ol - разметка при помощи перечисления (A, B, C, D / 1, 2, 3, 4)
+            <br>примеры использования
+            <ol>
+                <li>один</li>
+                <li>два</li>
+                <li>три
+                    <br>и даже в несколько строчек
+                </li>
+                
+
+
+            </ol>
+            <br>
+            в {ol} можно добавить несколько аргуметнов:
+            <ol>
+                <li><strong>reversed</strong> - порядок нумерации наоборот</li>
+                <li><strong>start = "number" </strong>нумерация начнётся с указаного числа</li>
+                <li><strong>type</strong> задаёт тип нумерации</li>
+                <ul>
+                    <li><strong>1</strong> для цифр (по умолчанию)</li>
+                    <li><strong>a</strong> для строчных букв</li>
+                    <li><strong>A</strong> для заглавных букв</li>
+                    <li><strong>i</strong> для строчной Римской нумерации</li>
+                    <li><strong>I</strong> для заглавной Римской нумерации</li>
+                    
+                </ul>
+                
+            </ol>
+            
+        </li>
+        <li>il - перечисление при помощи символов</li>
+        примеры использования
+        <ul>
+            <li>один</li>
+            <li>два</li>
+            <li>три
+            <br>и даже несколько строчек</li>
+        </ul>
+    в {il} можно добавить несколько аргмуентов:
+    <ol>
+        <li><strong>compact</strong>     - cписок будет в более компактном стиле</li>
+        <li> <strong>type</strong> - атрибут добавляющий маркеры в список</li>
+        <ul type = "disc">
+            <li>circle</li>
+            <li>disc</li>
+            <li>square</li>
+
+        </ul>
+
+    </ol>
+    
+    </ol>
+    <h2>Создание кликабельной ссылки:</h2>
+
+    <ol>
+
+    <li>https://pobeda.onf.ru/#donate1_anch - просто так на ссылку нельзя нажать, она воспринимается как текст</li>
+    <li> Для создания ссылки, необходимо использовать функцию {a}, и в её аргмуенте herf записать саму ссылку, а в {a} написать текст, при нажати на который откроется ссылка:
+        <br><a href="https://pobeda.onf.ru/#donate1_anch">https://pobeda.onf.ru/#donate1_anch</a>
+    <li> Если href оставить пустым, а в {a} записать ссылку, то при нажатии перекинет на сайт в котором всё это написано: </li>
+     <a href="">https://pobeda.onf.ru/#donate1_anch</a>
+    <li> если в {a} добавить атрибут download, то ссылка превратиться в ссылку для скачивания, но при этом, обязательно чтобы скачиваемое находилось в папке с сайтом:
+    <br> <a href="я с женой(я справа).png" download>я с женой(я справа).png</a></li>
+    <ul><li type = "disc">если ссылка в herf будет вести на то, что неьзя скачать, то при нажатии просто откроется сайт:
+     <br><a href="https://pobeda.onf.ru/#donate1_anch" download>https://pobeda.onf.ru/#donate1_anch</a></li></ul>
+    <li>Для того чтобы открылась новая вкладка, а не заменялась эта, необходимо в {a} добавить target = "_blank":
+         <br><a href="https://pobeda.onf.ru/#donate1_anch" target = "_blank">clickclickclickclick</a></li>
+
+    </ol>
+    <H2>Добавление изображения:</H2>
+    <p>для того чтобы добавить изображение используется img {img src="" alt=""}</p>
+    <ul type = 'disc'>
+        <li><strong>src</strong> - URL или название изображения. Этот атрибут является обязательным для элемента <img></li>
+        <li><strong>alt</strong> - этим атрибутом задаётся альтернативное текстовое описание изображения.</li>
+        <em><strong>Примечание:</strong> Браузеры не всегда отображают изображение на которое ссылается элемент, и в случае если ссылка или название на картинку ошибочное, то вмесо картинки будет заданный текст:</em>
+        <br><img src="test.pmg" alt = "text">
+        <li><strong>width</strong> - размер изображения в пикселях</li>
+        <img src="я с женой(я справа).png" alt="" width="400">
+    
+        
+    </ul>
+    <h2>Дополнительно:</h2>
+    <p>для созданя кликабельной картинки которая ведёт на скачивание/сайт неободимо в {a} добавить картинку при помощи того же img
+    <br><a href="я с женой(я справа).png" download><img src="я с женой(я справа).png" alt="" width="400"></a>
+    <br><a href="https://pobeda.onf.ru/#donate1_anch" download target = "_blank"><img src="я с женой(я справа).png" alt="" width="400"></a>
+    <h2>Таблиццы)):</h2>
+    таблицы записываются при помощи {table}{/table}
+    <br>{tr} - столбец таблицы
+    <br>{td} - строчка таблицы
+    <br>{th} - оглавление таблицы
+    <br>border = "number" ширина полосок
+    <br>
+    <table border = "1">
+        <th>
+        <td>птицы</td>
+        <td>рыбы</td>
+        </th>
+        <tr>
+            <td>1.</td>
+            <td>голубь</td>
+            <td>окунь</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>воробей</td>
+            <td>щука</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>картошка</td>
+            <td>сухарики</td>
+        </tr>
+        
+    </table>
+    <h2>Сайт в сайте:</h2>
+    в той же функции {a} в аттрибуте href записать название файла(.html) который должен быть приложен
+    <br><a href="new.html">clickcliickclicck</a>
+    <h2>Кнопки, с котрыми можно взаимодействовать:</h2>
+    <p>Для создания кнопки, с которой можно взаимодействовать используют <strong>input</strong>, в атрибут <strong>type</strong> записывается то, что будет приниматься(клик, текст, файл, цвет и.т.д)</p>
+    <ul type = "disc">
+    <li><p>checkbox <input type="checkbox" name="" id=""></p></li>
+    <li><p>text <input type="text"></p></li>
+    <li><p>file <input type="file"></p></li>
+    <li><p>color <input type="color"></p></li>
+    <li>
+        <label for="message">Сообщение</label>
+            <br>
+            <textarea name="" id="text" cols="30" rows="5"></textarea>
+            <br>
+        </li>
+    </ul>
+    <br>чтобы видеть текст в поле, необходимо дописать атрибут placeholder="text"
+    <input type="text" placeholder="text">
+    <br>для использования данных их надо объеденить при помощи {form}, которая принимает аттрибут action = "", в который мы можем вписать то куда мы перейдём после окончания заполнения нажав на кнопку чёто типо подтвердить, а так же для добавления кнопки отправить необохидмо в конце написать input с аттрибутом sumbit
+    <h2>Пример</h2>
+    <form action="g.html">
+        <label for="username">Имя фамилия</label> <input type="text" name="" id="username" placeholder="Имя, фамилия">
+        <br>
+        <label for="color">Любимый цвет)</label> <input type="color" id = "color" placeholder="">
+        <br>
+        <label for="date">Дата рождения </label> <input type="date" name="" id="date">
+        <label for="message">Сообщение</label>
+            <br>
+            <textarea name id = "text" cols = "30" rows = "5"></textarea>
+            <br>
+         <input type="submit" value = 'Отправить'>
+        
+
+
+
+
+
+    </form>
+
+
+
+     
+
+
+
+
+    
+   
+   <h1>to be продолжение</h1>
+   
+</body>
+</html>
